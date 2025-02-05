@@ -314,6 +314,10 @@ li {
     z-index: 2;
 }
 
+.navbar-toggler{
+    display: none;
+}
+
 @media print {
     h2{
         display: none;
@@ -333,6 +337,9 @@ li {
     .container{
         width: auto;
         padding: 0 30px;
+    }
+    .dress__item{
+        width: 25%;
     }
 }
 
@@ -372,6 +379,32 @@ background: linear-gradient(180deg, rgba(249,246,241,1) 0%, rgba(249,246,241,1) 
 .card{
     width: 47%;
 }
+.logo{
+    order: -1;
+    width: 70%;
+}
+.basket{
+    order: -1;
+    text-align: right;
+}
+.dress__item{
+    width: 33%;
+}
+}
+
+@media (max-width:600px){
+    .basket__item,
+    .basket__list,
+    .menu{
+        display: none;
+        width: 100%;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .man-woman__list{
+        flex-direction: column;
+    }
 }
 
 @media (max-width:576px){
@@ -385,5 +418,16 @@ background: linear-gradient(180deg, rgba(249,246,241,1) 0%, rgba(249,246,241,1) 
     .catalog{
         justify-content: center;
     }
+    .dress__item{
+        width: 50%;
+    }
+}
+@media (max-width:320px){
+    .dress__item{
+        width: 100%;
+    }
 }
 
+.show{
+    display: block;
+}
